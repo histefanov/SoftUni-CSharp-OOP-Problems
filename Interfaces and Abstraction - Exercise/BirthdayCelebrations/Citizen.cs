@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Runtime.Intrinsics.X86;
+using System.Text;
+
+namespace BirthdayCelebrations
+{
+    public class Citizen : IIdentifiable, IBornable
+    {
+        public Citizen(string name, int age, string id, string birthdate)
+        {
+            Name = name;
+            Age = age;
+            Id = id;
+            Birthdate = birthdate;
+        }
+
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public string Id { get; set; }
+        public string Birthdate { get; set; }
+    }
+}
