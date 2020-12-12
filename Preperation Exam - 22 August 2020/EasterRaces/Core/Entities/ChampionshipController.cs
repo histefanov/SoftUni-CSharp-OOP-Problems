@@ -49,7 +49,6 @@ namespace EasterRaces.Core.Entities
             driver.AddCar(car);
 
             string outputMsg = String.Format(OutputMessages.CarAdded, driverName, carModel);
-
             return outputMsg;
         }
 
@@ -73,7 +72,6 @@ namespace EasterRaces.Core.Entities
             race.AddDriver(driver);
 
             string outputMsg = String.Format(OutputMessages.DriverAdded, driverName, raceName);
-
             return outputMsg;
         }
 
@@ -95,7 +93,6 @@ namespace EasterRaces.Core.Entities
             _carRepository.Add(car);
 
             string outputMsg = String.Format(OutputMessages.CarCreated, type + "Car", model);
-
             return outputMsg;
         }
 
@@ -110,7 +107,6 @@ namespace EasterRaces.Core.Entities
             _driverRepository.Add(new Driver(driverName));
 
             string outputMsg = String.Format(OutputMessages.DriverCreated, driverName);
-
             return outputMsg;
         }
 
@@ -125,7 +121,6 @@ namespace EasterRaces.Core.Entities
             _raceRepository.Add(new Race(name, laps));
 
             string outputMsg = String.Format(OutputMessages.RaceCreated, name);
-
             return outputMsg;
         }
 
